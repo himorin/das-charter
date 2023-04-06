@@ -155,26 +155,30 @@
         <h2>
           Scope
         </h2>
+        <h2>Scope</h2>
         <p>
-          The Devices and Sensors WG defines client-side APIs that allow web
+          The Devices and Sensors WG defines client-side Web APIs that allow web
           applications to make use of widely available device capabilities that
-          enable modern, context-aware, and interactive application
-          experiences. These capabilities include:
+          enable modern, context-aware, and interactive application experiences.
+          The scope of this working group includes defining client-side Web APIs
+          for
         </p>
         <ul>
           <li>
-            simple device vibration
+            Controlling a tactile feedback device to generate simple (not
+            fine-grained) tactile feedback based on a specified feedback pattern
           </li>
           <li>
-            accessing contact information
+            accessing a user's contact information with full control over the
+            shared data
           </li>
-          <li>preventing the screen from turning off
+          <li>
+            preventing the screen from turning off under certain conditions
           </li>
-          <li>monitoring changes in motion and orientation of the hosting
-          device
+          <li>
+            monitoring changes in motion and orientation of the hosting device
           </li>
-          <li>obtaining and monitoring the location of the hosting device
-          </li>
+          <li>obtaining and monitoring the location of the hosting device</li>
         </ul>
         <p>
           To fulfill its mission and to encourage broader engagement from
@@ -214,8 +218,37 @@
             Out of Scope
           </h3>
           <p>
-            Hardware security services are out of scope for this WG.
+            The scope of this WG is limited to defining client-side Web APIs.
+            Defining the functionality related to processing a client-side Web
+            API call is out of scope of this WG. More specifically, the
+            following are out of scope of this WG:
           </p>
+          <ol>
+            <li>Hardware architecture and functionality</li>
+            <li>Operating system functionality</li>
+            <li>Firmware architecture and/or functionality</li>
+            <li>Security architecture and/or functionality</li>
+            <li>
+              Tactile feedback functionality (e.g., processing a vibration API
+              call), with the exception of: defining an API for controlling a
+
+              tactile feedback device to generate simple (not fine-grained)
+              tactile feedback based on a specified feedback pattern
+            </li>
+            <li>
+              User interfaces, with the exception of: defining an API for
+
+              controlling a tactile feedback device to generate simple (not
+              fine-grained) tactile feedback based on a specified feedback
+              pattern
+            </li>
+            <li>
+              Generating or determining a feedback pattern for controlling a
+              tactile feedback device to generate simple (not fine-grained)
+              tactile feedback based on a specified feedback pattern
+            </li>
+            <li>Fine-grained tactile feedback</li>
+          </ol>
         </section>
       </section>
       <section id="deliverables">
